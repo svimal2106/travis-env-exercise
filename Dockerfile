@@ -4,6 +4,8 @@ FROM node:13
 # Create app directory
 WORKDIR /usr/src/app
 
+ARG JWT_SECRET=world
+
 # Install app dependencies by copying
 # package.json and package-lock.json
 COPY package*.json ./
