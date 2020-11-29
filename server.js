@@ -4,7 +4,7 @@ function sleep(ms) {
 }
 
 async function main() {
-  const jwt_secret = process.env.JWT_SECRET;
+  const jwt_secret = process.env.SECRET;
   while(true) {
     console.log(`JWT secret is ` + jwt_secret);
     console.log("Microservices rock!");
